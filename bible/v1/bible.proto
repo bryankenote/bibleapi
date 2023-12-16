@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package bible.v1;
+
+option go_package = "bibleapi/src/codegen/pb/bible/v1;biblev1";
+
+message Verse {
+  string translation = 1;
+  string book = 2;
+  int32 chapter = 3;
+  int32 verse = 4;
+  string content = 5;
+}
+
+message GetChapterRequest {
+  string translation = 1;
+  string book = 2;
+  int32 chapter = 3;
+}
+
+message GetChapterResponse { repeated Verse verses = 1; }
+
+service BibleService {
+  rpc GetChapter(GetChapterRequest) returns (GetChapterResponse) {}
+}

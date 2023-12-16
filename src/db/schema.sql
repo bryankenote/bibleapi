@@ -1,0 +1,9 @@
+CREATE TABLE verses (
+	id INTEGER PRIMARY KEY,
+	translation TEXT NOT NULL,
+	book TEXT NOT NULL,
+	chapter TINYINT NOT NULL,
+	verse TINYINT NOT NULL,
+	content TEXT NOT NULL
+);
+

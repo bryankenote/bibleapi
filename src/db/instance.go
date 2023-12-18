@@ -1,10 +1,10 @@
 package db
 
 import (
-	"bibleapi/src/codegen/sqlc"
 	"context"
 	sql "database/sql"
 	"fmt"
+	"github.com/bryankenote/bibleapi/src/codegen/sqlc"
 	"log"
 	"os"
 

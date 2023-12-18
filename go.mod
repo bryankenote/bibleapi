@@ -1,4 +1,4 @@
-module bibleapi
+module github.com/bryankenote/bibleapi
 
 go 1.19
 

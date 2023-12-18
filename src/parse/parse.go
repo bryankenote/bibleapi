@@ -1,11 +1,11 @@
 package parse
 
 import (
-	"bibleapi/src/codegen/sqlc"
-	"bibleapi/src/db"
 	"bufio"
 	"context"
 	"fmt"
+	"github.com/bryankenote/bibleapi/src/codegen/sqlc"
+	"github.com/bryankenote/bibleapi/src/db"
 	"os"
 	"regexp"
 	"slices"

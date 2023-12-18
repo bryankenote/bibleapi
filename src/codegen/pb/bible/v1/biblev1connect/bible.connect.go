@@ -5,7 +5,7 @@
 package biblev1connect
 
 import (
-	v1 "bibleapi/src/codegen/pb/bible/v1"
+	v1 "github.com/bryankenote/bibleapi/src/codegen/pb/bible/v1"
 	connect "connectrpc.com/connect"
 	context "context"
 	errors "errors"

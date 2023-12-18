@@ -1,8 +1,8 @@
 package mappers
 
 import (
-	biblev1 "bibleapi/src/codegen/pb/bible/v1"
-	"bibleapi/src/codegen/sqlc"
+	biblev1 "github.com/bryankenote/bibleapi/src/codegen/pb/bible/v1"
+	"github.com/bryankenote/bibleapi/src/codegen/sqlc"
 
 	"connectrpc.com/connect"
 )

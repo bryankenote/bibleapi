@@ -4,7 +4,7 @@ import (
 	"context"
 	sql "database/sql"
 	"fmt"
-	"github.com/bryankenote/bibleapi/src/codegen/sqlc"
+	"github.com/bryankenote/bibleapi/codegen/sqlc"
 	"log"
 	"os"
 

@@ -7,11 +7,11 @@ import (
 	"log"
 	"net/http"
 
-	biblev1 "github.com/bryankenote/bibleapi/src/codegen/pb/bible/v1"
-	"github.com/bryankenote/bibleapi/src/codegen/pb/bible/v1/biblev1connect"
-	"github.com/bryankenote/bibleapi/src/mappers"
+	biblev1 "github.com/bryankenote/bibleapi/codegen/pb/bible/v1"
+	"github.com/bryankenote/bibleapi/codegen/pb/bible/v1/biblev1connect"
+	"github.com/bryankenote/bibleapi/mappers"
 
-	"github.com/bryankenote/bibleapi/src/db"
+	"github.com/bryankenote/bibleapi/db"
 
 	"connectrpc.com/connect"
 	"github.com/joho/godotenv"

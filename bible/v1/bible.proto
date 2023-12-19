@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package bible.v1;
 
-option go_package = "bibleapi/src/codegen/pb/bible/v1;biblev1";
+option go_package = "github.com/bryankenote/bibleapi/codegen/pb/bible/v1;biblev1";
 
 message Verse {
   string translation = 1;

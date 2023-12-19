@@ -1,21 +1,21 @@
 BINARY_NAME=bible_server
 
 sqlc:
-	rm -rf /src/codegen/sqlc/*
+	rm -rf ./codegen/sqlc/*
 	sqlc generate
 
 pb:
-	rm -rf ./src/codegen/pb/*
+	rm -rf ./codegen/pb/*
 	buf generate
 
 run:
-	go run ./src/main.go
+	go run ./cmd/main.go
 
 lint:
 	buf lint
 
 build:
-	go build -o ${BINARY_NAME} ./src/main.go
+	go build -o ${BINARY_NAME} ./cmd/main.go
 
 clean:
 	go clean

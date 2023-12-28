@@ -1,4 +1,4 @@
-package parse
+package main
 
 import (
 	"bufio"
@@ -67,9 +67,9 @@ func ParseBibleFile(fileName string, processVerse func(verse Verse)) {
 	}
 }
 
-func ImportBibleFile(ctx context.Context) {
+func ImportBSBFile(ctx context.Context) {
 	currentBook := ""
-	ParseBibleFile("../bsb/bible.txt", func(verse Verse) {
+	ParseBibleFile("cmd/parse/bsb/bible.txt", func(verse Verse) {
 		if currentBook != verse.Book {
 			currentBook = verse.Book
 			fmt.Printf("Importing %s ...\n", currentBook)
@@ -83,4 +83,9 @@ func ImportBibleFile(ctx context.Context) {
 		})
 	})
 	fmt.Println("Done.")
+}
+
+func main() {
+	db.ConnectToDB()
+	ImportBSBFile(context.Background())
 }

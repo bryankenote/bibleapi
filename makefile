@@ -20,3 +20,6 @@ build:
 clean:
 	go clean
 	rm ${BINARY_NAME}
+
+bsb:
+	go run ./cmd/parse/main.go
